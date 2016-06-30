@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My shiny application</title>
+  <meta charset="utf-8">
+  <meta name="description" content="My shiny application">
+  <meta name="author" content="Ch">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>My shiny application</h1>
+    <h2></h2>
+    <p>Ch<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Profit and sales visualization</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Hello, this is interactive data visualization of sales data. </p>
+
+<p>The application can be accessed on 
+<a href="https://hcxyeah.shinyapps.io/data_product/">https://hcxyeah.shinyapps.io/data_product/</a>
+The raw scripts are on github:
+<a href="https://github.com/hcxyeah/data_product">https://github.com/hcxyeah/data_product</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Design</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The application use googlevis and shiny to create interactive graph.
+In this application, user select product categories and market to see the profit and sales in deifferent countries around the world, how the profit and sales change over time, and the comparison between different market. </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Data</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This dataset is the profit and sales data of a global company.</p>
+
+<pre><code class="r">data &lt;- read.csv(&quot;../data.csv&quot;)
+names(data)
+</code></pre>
+
+<pre><code>##  [1] &quot;X&quot;              &quot;Country&quot;        &quot;Row.ID&quot;         &quot;Order.ID&quot;      
+##  [5] &quot;Order.Date&quot;     &quot;Ship.Date&quot;      &quot;Ship.Mode&quot;      &quot;Customer.ID&quot;   
+##  [9] &quot;Customer.Name&quot;  &quot;Segment&quot;        &quot;City&quot;           &quot;State&quot;         
+## [13] &quot;Postal.Code&quot;    &quot;Market&quot;         &quot;Region&quot;         &quot;Product.ID&quot;    
+## [17] &quot;Category&quot;       &quot;Sub.Category&quot;   &quot;Product.Name&quot;   &quot;Sales&quot;         
+## [21] &quot;Quantity&quot;       &quot;Discount&quot;       &quot;Profit&quot;         &quot;Shipping.Cost&quot; 
+## [25] &quot;Order.Priority&quot; &quot;Code&quot;
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Components</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>Map: show the sales and profit of each countries on the map and table.</li>
+<li>Growth: show the profit and sales in different market change over time.</li>
+<li>Bar chart: show the comparison of profit and sale on different markets.</li>
+<li>Data: enable user to see the data and download it. </li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-5" style="background:;">
+  <hgroup>
+    <h2>End</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Thank you! 
+Do you like it?</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-6" style="background:;">
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Profit and sales visualization'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Design'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Data'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Components'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='End'>
+         5
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title='NA'>
+         6
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
